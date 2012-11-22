@@ -1,20 +1,23 @@
-﻿<h3>Page3</h3>
-<p>Часто при вёрстке страниц нужно использовать одно и то же значение много раз: 
-один и тот же цвет, один и тот же шрифт. И если это значение нужно будет изменить, 
-то придётся менять во многих местах. В стандартном CSS нет возможностей наследования 
-стилей, вычисляемых значений и прочих зависимостей.</p>
-<p>Для решения этих вопросов и ускорения разработки существует несколько расширений языка CSS. 
-Расширений в том смысле, что код CSS является валидным кодом для расширения, но не наоборот. 
-Чтобы из кода "расширенного CSS" получился обычный CSS-файл, воспринимаемый браузером, 
-необходимо выполнить компиляцию. Компиляция может быть нескольких типов:
-<ul>
-<li>во время запуска страницы на стороне клиента (средствами JavaScript)</li>
-<li>во время запуска страницы на стороне сервера</li>
-<li>во время вёрстки сайта средствами специального компилятора</li>
-</ul>
-<p>
-Примеры расширений CSS:</p>
-<ul>
-<li>Sass</li>
-<li>LESS</li>
-</ul>
+### Page3
+
+Because not all browsers correctly parse CSS code, developed coding techniques known 
+as CSS hacks can either filter specific browsers or target specific browsers (generally 
+both are known as CSS filters). The former can be defined as CSS filtering hacks and 
+the latter can be defined as CSS targeting hacks. Both can be used to hide or show 
+parts of the CSS to different browsers. This is achieved either by exploiting CSS-handling 
+quirks or bugs in the browser, or by taking advantage of lack of support for parts 
+of the CSS specifications. Using CSS filters, some designers have gone as 
+far as delivering different CSS to certain browsers to ensure designs render as expected. 
+Because very early web browsers were either completely incapable of handling CSS, or rendered 
+CSS very poorly, designers today often routinely use CSS filters that completely prevent these 
+browsers from accessing any of the CSS. Internet Explorer support for CSS began with IE 3.0 and 
+increased progressively with each version. By 2008, the first Beta of Internet Explorer 8 offered 
+support for CSS 2.1 in its best web standards mode.
+
+An example of a well-known CSS browser bug is the Internet Explorer box model bug, where box widths 
+are interpreted incorrectly in several versions of the browser, resulting in blocks that are too 
+narrow when viewed in Internet Explorer, but correct in standards-compliant browsers. The bug can 
+be avoided in Internet Explorer 6 by using the correct doctype in (X)HTML documents. CSS hacks and 
+CSS filters are used to compensate for bugs such as this, just one of hundreds of CSS bugs that have 
+been documented in various versions of Netscape, Mozilla Firefox, Opera, and Internet Explorer 
+(including Internet Explorer 7).
